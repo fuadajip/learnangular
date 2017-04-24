@@ -1,14 +1,17 @@
 
 
-import { Component } from "@angular/core";
+import { Component, Input} from "@angular/core";
 
 @Component({
     selector : 'form-event',
     template : `<label>My Event</label>
-                  <input type="text" class="form-control" id="myevent" placeholder="{{placeholder}}">
+                  <input type="text" class="form-control" id="myevent" placeholder="{{placeholdertext}}">
                   <button class="btn btn-default">Submit</button>
                 `
 })
 export class FormEvent{
-    placeholder = 'Enter your event';
+
+    @Input('placeholderInput')
+    placeholdertext = 'Enter your event';   
+
 }

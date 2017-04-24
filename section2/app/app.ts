@@ -6,7 +6,7 @@ import { FormEvent } from "./form-event";
 
 @Component({
     selector : 'root',
-    template : '<form-event></form-event>',
+    template : `<form-event [placeholderInput]="'Custom Place Holder'"></form-event>`,
 })
 
 export class App {}
